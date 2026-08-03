@@ -32,7 +32,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0 h-10 w-auto" aria-label="meshki Industries Security – Startseite">
+            <Link href="/" className="flex items-center flex-shrink-0 h-12 md:h-14 w-auto" aria-label="meshki Industries Security – Startseite">
               <img src="/logo-icon.png" alt="meshki Industries Security Logo" className="h-full w-auto object-contain" />
             </Link>
 

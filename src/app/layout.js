@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import CookieBanner from '@/components/ui/CookieBanner';
 import { COMPANY } from '@/lib/constants';
 
 const inter = Inter({
@@ -76,8 +77,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-sans antialiased">
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow pt-16 md:pt-20">
+          {children}
+        </main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
