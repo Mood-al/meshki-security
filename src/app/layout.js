@@ -1,13 +1,13 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieBanner from '@/components/ui/CookieBanner';
 import { COMPANY } from '@/lib/constants';
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-outfit',
   display: 'swap',
   weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
@@ -45,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="de" className={inter.variable}>
+    <html lang="de" className={outfit.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
               '@type': 'LocalBusiness',
               name: COMPANY.name,
               description: 'Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz.',
-              url: 'https://meshki-security.vercel.app',
+              url: COMPANY.websiteUrl,
               telephone: COMPANY.phone,
               email: COMPANY.email,
               address: {
@@ -76,12 +76,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-sans antialiased">
-        <Header />
-        <main className="flex-grow pt-16 md:pt-20">
-          {children}
-        </main>
-        <Footer />
-        <CookieBanner />
+        <div className="relative overflow-hidden flex flex-col min-h-screen max-w-[100vw]">
+          <Header />
+          <main className="flex-grow pt-16 md:pt-20">
+            {children}
+          </main>
+          <Footer />
+          <CookieBanner />
+        </div>
       </body>
     </html>
   );

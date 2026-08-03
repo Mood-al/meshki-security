@@ -34,7 +34,7 @@ module.exports = {
         success: '#16A34A',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'hero-gradient': 'linear-gradient(135deg, #060D1A 0%, #0A1628 50%, #0F2240 100%)',
