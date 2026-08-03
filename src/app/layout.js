@@ -75,10 +75,10 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased bg-white">
         <div className="relative overflow-hidden flex flex-col min-h-screen max-w-[100vw]">
           <Header />
-          <main className="flex-grow pt-16 md:pt-20">
+          <main className="flex-grow">
             {children}
           </main>
           <Footer />

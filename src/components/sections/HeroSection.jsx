@@ -24,11 +24,12 @@ export default function HeroSection() {
       <div className="container-custom relative z-10 pt-28 pb-20">
         <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-4xl mx-auto text-center">
 
-          <motion.div variants={fadeUp} className="mb-8 inline-flex items-center">
-            <span className="inline-flex items-center gap-2 bg-white/8 border border-white/12 rounded-full px-4 py-1.5 text-xs font-semibold text-white/70 tracking-wider uppercase backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              Sicherheitsdienst · Koblenz & Rheinland-Pfalz
-            </span>
+          <motion.div variants={fadeUp} className="mb-6">
+            <p className="text-sm md:text-base font-semibold tracking-[0.2em] text-steel-400 uppercase flex items-center justify-center gap-3">
+              <span className="w-8 h-px bg-steel-400/50"></span>
+              Zertifizierter Sicherheitsdienst
+              <span className="w-8 h-px bg-steel-400/50"></span>
+            </p>
           </motion.div>
 
           <motion.h1 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">

@@ -33,7 +33,11 @@ export default function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0 h-12 md:h-14 w-auto" aria-label="meshki Industries Security – Startseite">
-              <img src="/logo-icon.png" alt="meshki Industries Security Logo" className="h-full w-auto object-contain" />
+              <img 
+                src="/logo-icon.png" 
+                alt="meshki Industries Security Logo" 
+                className={`h-full w-auto object-contain transition-all duration-300 ${!scrolled ? 'brightness-0 invert opacity-90' : ''}`} 
+              />
             </Link>
 
             {/* Desktop Nav */}
