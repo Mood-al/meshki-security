@@ -21,12 +21,12 @@ export const metadata = {
   description:
     'meshki Industries Security bietet professionellen Objektschutz, Veranstaltungsschutz, Revierfahrten und Baustellenbewachung in Koblenz & Rheinland-Pfalz. Jetzt kostenloses Angebot anfordern!',
   keywords: [
-    'Sicherheitsdienst Koblenz', 'Objektschutz Koblenz',
+    'Sicherheitsdienst Koblenz', 'Security Koblenz', 'Objektschutz Koblenz',
     'Sicherheitsunternehmen Rheinland-Pfalz', 'Veranstaltungsschutz Koblenz',
     'Baustellenbewachung', 'Wachdienst Koblenz', 'Revierfahrten',
     'Empfangsdienst', 'Brandschutzwache', 'Security Firma Koblenz',
-    'meshki Security', 'Pfortendienst Koblenz',
-    'Bewachungsunternehmen',
+    'Wach und Schließgesellschaft', 'meshki Security', 'Pfortendienst Koblenz',
+    'Bewachungsunternehmen', 'Sicherheitspersonal mieten',
   ],
   authors: [{ name: COMPANY.founder }],
   creator: COMPANY.name,
@@ -38,7 +38,8 @@ export const metadata = {
     siteName: COMPANY.name,
     title: 'meshki Industries Security | Sicherheitsdienst Koblenz',
     description:
-      'Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz. Objektschutz, Veranstaltungsschutz & mehr – zertifiziert, zuverlässig, rund um die Uhr.',
+      'Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz. Objektschutz, Veranstaltungsschutz & Baustellenbewachung. Zuverlässig & rund um die Uhr.',
+    images: [{ url: '/logo-icon.png' }],
   },
   alternates: { canonical: COMPANY.websiteUrl },
 };
@@ -52,18 +53,25 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
+              '@type': 'SecurityService',
               name: COMPANY.name,
-              description: 'Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz.',
+              description: 'Professioneller Sicherheitsdienst und Wachdienst in Koblenz und ganz Rheinland-Pfalz.',
               url: COMPANY.websiteUrl,
-              telephone: COMPANY.phone,
+              telephone: COMPANY.phoneDisplay,
               email: COMPANY.email,
+              image: `${COMPANY.websiteUrl}/logo-icon.png`,
+              priceRange: '€€',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: COMPANY.address,
                 postalCode: COMPANY.zip,
                 addressLocality: COMPANY.city,
                 addressCountry: 'DE',
+              },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: '50.3600',
+                longitude: '7.5850'
               },
               openingHoursSpecification: {
                 '@type': 'OpeningHoursSpecification',
