@@ -20,7 +20,7 @@ export default function CareerSection() {
               Werden Sie Teil <span className="text-navy-600">unseres Teams.</span>
             </h2>
             <p className="text-steel-500 text-base leading-relaxed mb-5">
-              Wir suchen zuverlässige Sicherheitskräfte, die mit Verantwortung und Professionalität arbeiten. Ob Quereinsteiger mit §34a-Schein oder erfahrene Fachkraft – bei meshki Security sind Sie mehr als eine Nummer.
+              Wir suchen zuverlässige Sicherheitskräfte, die mit Verantwortung und Professionalität arbeiten. Ob Quereinsteiger oder erfahrene Fachkraft – bei meshki Security sind Sie mehr als eine Nummer.
             </p>
             <p className="text-steel-500 text-base leading-relaxed mb-10">
               Flache Hierarchien, ein familiäres Team und faire Bedingungen – das ist unser Versprechen an Sie.
@@ -55,7 +55,7 @@ export default function CareerSection() {
                 <p className="text-white/50 text-xs font-semibold tracking-widest uppercase mb-2">Offene Stellen</p>
                 <h3 className="text-white font-black text-2xl mb-4">Sicherheitsmitarbeiter (m/w/d)</h3>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  Vollzeit & Teilzeit · Koblenz & Rheinland-Pfalz · § 34a GewO erforderlich
+                  Vollzeit & Teilzeit · Koblenz & Rheinland-Pfalz
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {[{ label: 'Standort', value: 'Koblenz, DE' },{ label: 'Art', value: 'Vollzeit / Teilzeit' },{ label: 'Schichten', value: 'Flexibel 24/7' },{ label: 'Start', value: 'Ab sofort' }].map((item) => (

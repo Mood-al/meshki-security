@@ -32,7 +32,7 @@ export default function Footer() {
               <img src="/logo-icon.png" alt="meshki Industries Security Logo" className="h-full w-auto object-contain brightness-0 invert opacity-90" />
             </div>
             <p className="text-steel-400 text-sm leading-relaxed mb-6">
-              Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz. Zertifiziert nach § 34a GewO. Rund um die Uhr für Sie da.
+              Professioneller Sicherheitsdienst in Koblenz & Rheinland-Pfalz. Rund um die Uhr für Sie da.
             </p>
             <div className="flex gap-3">
               {[{ href: COMPANY.socialLinks.linkedin, label: 'LinkedIn', Icon: LinkedinIcon },

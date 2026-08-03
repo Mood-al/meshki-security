@@ -6,9 +6,9 @@ import { COMPANY } from '@/lib/constants';
 import SectionLabel from '@/components/ui/SectionLabel';
 
 const highlights = [
-  { icon: ShieldCheck, title: 'Zertifiziert nach §34a GewO', desc: 'Jeder Mitarbeiter ist behördlich geprüft.' },
+  { icon: ShieldCheck, title: 'Modernste Sicherheitskonzepte', desc: 'Individuell auf Ihre Bedürfnisse abgestimmt.' },
   { icon: Clock,       title: '24/7 Einsatzbereitschaft',   desc: 'Unsere Leitstelle ist niemals offline.' },
-  { icon: Award,       title: 'Über 5.000 Einsätze',        desc: 'Bewährte Erfahrung in der Praxis.' },
+  { icon: Award,       title: 'Regionale Expertise',        desc: 'Verwurzelt in Koblenz und Umgebung.' },
 ];
 const checkPoints = [
   'Eigene, festangestellte Mitarbeiter – kein Leihpersonal',
@@ -45,22 +45,29 @@ export default function AboutSection() {
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="absolute -top-5 -right-5 bg-navy-900 rounded-2xl px-5 py-4 shadow-navy text-white">
-              <p className="text-3xl font-black leading-none">{COMPANY.yearsExperience}</p>
-              <p className="text-white/60 text-xs font-medium mt-0.5">Jahre Erfahrung</p>
+              <p className="text-3xl font-black leading-none text-transparent bg-clip-text bg-gradient-to-r from-white to-steel-400">100%</p>
+              <p className="text-white/60 text-xs font-medium mt-0.5 tracking-wide">Diskretion</p>
             </motion.div>
           </motion.div>
 
           {/* Content */}
           <motion.div initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7 }} className="order-1 lg:order-2">
-            <SectionLabel text="Unser Versprechen" />
-            <h2 id="about-heading" className="text-3xl md:text-4xl lg:text-5xl font-black text-navy-900 mt-4 mb-6 tracking-tight leading-tight">
-              Über <span className="text-navy-700 italic">10 Jahre</span> operative Erfahrung – für Ihre Sicherheit.
-            </h2>
-            <p className="text-steel-500 text-base leading-relaxed mb-5">
-              Seit {COMPANY.founded} sichern wir Objekte, Veranstaltungen und Baustellen in Koblenz und ganz Rheinland-Pfalz. Wir haben kein loses Angebot aufgebaut, sondern ein System, das im Alltag trägt.
-            </p>
-            <p className="text-steel-500 text-base leading-relaxed mb-8">
+            <div className="flex flex-col gap-6">
+              <SectionLabel text="Unser Versprechen" />
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy-900 leading-[1.1] tracking-tight">
+                Verlässlicher Schutz –<br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy-800 to-steel-500">
+                  für Ihre Sicherheit.
+                </span>
+              </h2>
+              <p className="text-lg text-steel-600 leading-relaxed font-medium">
+                Seit {COMPANY.founded} sichern wir Objekte, Veranstaltungen und Baustellen in {COMPANY.city}
+                und ganz Rheinland-Pfalz. Wir bieten kein loses Angebot,
+                sondern ein System, das im Alltag trägt.
+              </p>
+            </div>
+            <p className="text-steel-500 text-base leading-relaxed mb-8 mt-6">
               Klare Strukturen, feste Ansprechpartner und verlässliche Abläufe sorgen für Planbarkeit, Entlastung und das sichere Gefühl, dass alles läuft.
             </p>
             <ul className="space-y-3 mb-10">
@@ -72,14 +79,15 @@ export default function AboutSection() {
             </ul>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {highlights.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="rounded-2xl bg-steel-50 border border-steel-200/60 p-5 flex flex-col gap-2">
-                  <div className="w-9 h-9 rounded-xl bg-navy-900 flex items-center justify-center">
-                    <Icon size={16} className="text-white" />
+                <div key={title} className="bg-navy-900 text-white rounded-2xl p-4 shadow-xl border border-white/10 flex items-center gap-3 backdrop-blur-sm relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0 -translate-x-full group-hover:animate-shimmer" />
+                  <div className="flex flex-col">
+                    <span className="font-black text-2xl md:text-3xl tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-r from-white to-steel-300">
+                      Top
+                    </span>
+                    <span className="text-xs md:text-sm font-semibold text-steel-400">Qualität</span>
                   </div>
-                  <p className="text-navy-900 font-semibold text-sm leading-snug">{title}</p>
-                  <p className="text-steel-500 text-xs">{desc}</p>
-                </div>
-              ))}
+                </div>))}
             </div>
           </motion.div>
         </div>

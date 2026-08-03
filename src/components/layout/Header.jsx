@@ -29,10 +29,10 @@ export default function Header() {
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
         <div className="container-custom">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-24">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0 h-12 md:h-14 w-auto" aria-label="meshki Industries Security – Startseite">
+            <Link href="/" className="flex items-center flex-shrink-0 h-16 md:h-20 w-auto" aria-label="meshki Industries Security – Startseite">
               <img 
                 src="/logo-icon.png" 
                 alt="meshki Industries Security Logo" 

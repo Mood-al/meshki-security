@@ -30,10 +30,6 @@ export default function ImpressumPage() {
             E-Mail: <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
           </p>
 
-          <h2>Gewerbeanmeldung</h2>
-          <p>
-            Die Gewerbeanmeldung nach § 34a GewO (Bewachungsgewerbe) wurde erteilt durch die zuständige Behörde der Stadt Koblenz.
-          </p>
 
           <h2>EU-Streitschlichtung</h2>
           <p>

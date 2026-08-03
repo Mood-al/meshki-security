@@ -19,13 +19,13 @@ export const metadata = {
     template: '%s | meshki Industries Security',
   },
   description:
-    'meshki Industries Security bietet professionellen Objektschutz, Veranstaltungsschutz, Revierfahrten und Baustellenbewachung in Koblenz & Rheinland-Pfalz. Zertifiziert nach § 34a GewO. Jetzt kostenloses Angebot anfordern!',
+    'meshki Industries Security bietet professionellen Objektschutz, Veranstaltungsschutz, Revierfahrten und Baustellenbewachung in Koblenz & Rheinland-Pfalz. Jetzt kostenloses Angebot anfordern!',
   keywords: [
     'Sicherheitsdienst Koblenz', 'Objektschutz Koblenz',
     'Sicherheitsunternehmen Rheinland-Pfalz', 'Veranstaltungsschutz Koblenz',
     'Baustellenbewachung', 'Wachdienst Koblenz', 'Revierfahrten',
     'Empfangsdienst', 'Brandschutzwache', 'Security Firma Koblenz',
-    '34a Gewerbeordnung', 'meshki Security', 'Pfortendienst Koblenz',
+    'meshki Security', 'Pfortendienst Koblenz',
     'Bewachungsunternehmen',
   ],
   authors: [{ name: COMPANY.founder }],
