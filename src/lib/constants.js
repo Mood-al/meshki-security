@@ -1,6 +1,6 @@
 export const COMPANY = {
   name: 'meshki Industries Security',
-  websiteUrl: 'https://meshki-security.de', // TBD: Change this to your actual domain
+  websiteUrl: 'https://meshki-security.vercel.app',
   shortName: 'meshki Security',
   tagline: 'Sicherheit, die funktioniert.',
   phone: '01630815787',
