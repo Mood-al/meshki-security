@@ -84,10 +84,10 @@ export const ADVANTAGES = [
 ];
 
 export const STATS = [
-  { value: '10+',    label: 'Jahre Erfahrung' },
-  { value: '5.000+', label: 'Erfolgreiche Einsätze' },
-  { value: '200+',   label: 'Zufriedene Kunden' },
-  { value: '80+',    label: 'Qualifizierte Mitarbeiter' },
+  { value: '2026',   label: 'Firmengründung' },
+  { value: '1.000+', label: 'Erfolgreiche Einsätze' },
+  { value: '100%',   label: 'Kundenzufriedenheit' },
+  { value: '20+',    label: 'Qualifizierte Mitarbeiter' },
 ];
 
 export const CHALLENGES = [
